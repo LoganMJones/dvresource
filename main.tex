@@ -1,0 +1,204 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{qrcode}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{tcolorbox}
+
+% --- Colors ---
+\definecolor{Lilac}{RGB}{217,179,255}
+\definecolor{Yellow}{RGB}{255,233,127}
+\definecolor{PurpleText}{RGB}{95,75,139}
+
+% --- Page Setup ---
+\pagecolor{Lilac}
+\color{PurpleText}
+\pagestyle{empty}
+
+% --- Title Format ---
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{PurpleText}}{}{0em}{}
+
+% --- tcolorbox Styles ---
+\tcbset{
+  mybox/.style={
+    colback=Yellow,
+    colframe=PurpleText,
+    sharp corners,
+    boxrule=1pt,
+    arc=3mm,
+    width=\linewidth,
+    boxsep=5pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+  },
+  fixedhalfbox/.style={
+    colback=Yellow,
+    colframe=PurpleText,
+    width=\linewidth,
+    halign=center,
+    sharp corners,
+    boxrule=1pt,
+    arc=3mm,
+    height=0.5\textheight,
+    valign=center,
+  }
+}
+
+\begin{document}
+
+% --- Title ---
+\begin{center}
+    \fcolorbox{PurpleText}{Yellow}{
+        \parbox{0.9\linewidth}{
+            \centering
+            \vspace{0.5em}
+            {\LARGE\bf Davis \& Weber County \\ Domestic Violence Assistance}\\[0.5em]
+            \vspace{0.5em}
+        }
+    }
+\end{center}
+
+\vspace{.5em}
+\section*{National Resource}
+\begin{tcolorbox}[mybox]
+\begin{center}
+    \textbf{24/7 Hotline:} 800-799-7233\\
+    \href{https://www.thehotline.org}{thehotline.org}\\
+    \textbf{National DV Hotline}\\[.5em]
+    \qrcode[height=1in]{https://www.thehotline.org}
+\end{center}
+\end{tcolorbox}
+
+% --- Local Resources ---
+\vspace{.5em}
+\section*{Local Resources}
+\begin{multicols}{2}
+\begin{tcolorbox}[fixedhalfbox]
+\subsection*{YCC in Weber County}
+\begin{center}
+    \href{https://www.yccogden.org}{yccogden.org}\\
+    \textbf{YCC Website}\\[.5em]
+    \qrcode[height=1in]{https://www.yccogden.org}
+\end{center}
+
+\vspace{0.5em}
+{\small
+\begin{itemize}[leftmargin=0.5em]
+    \item \textbf{24/7 Crisis:} 801-392-7273
+    \item \textbf{Office:} 801-394-9456
+    \item \textbf{Child Care:} 801-689-1706
+    \item \textbf{Housing:} 801-689-1717
+    \item \textbf{Address:} 2261 Adams Ave, Ogden, UT 84401
+    \item \textbf{Hours:} Mon–Fri 9AM–5PM
+\end{itemize}
+}
+\end{tcolorbox}
+
+\columnbreak
+
+\begin{tcolorbox}[fixedhalfbox]
+\subsection*{Safe Harbor in Davis County}
+\begin{center}
+    \href{https://safeharborhope.org}{safeharborhope.org}\\
+    \textbf{Safe Harbor Website}\\[.5em]
+    \qrcode[height=1in]{https://safeharborhope.org}
+\end{center}
+
+\vspace{0.5em}
+{\small
+\begin{itemize}[leftmargin=0.5em]
+    \item \textbf{24/7 Crisis:} 801-444-9161
+    \item \textbf{Business:} 801-444-3191
+    \item \textbf{Email:} info@safeharborhope.org
+    \item \textbf{Address:} 223 Larson Ln, Layton, UT 84041
+    \item \textbf{Hours:} Mon–Thurs 9AM–5PM, Fri by appointment
+\end{itemize}
+}
+\end{tcolorbox}
+\end{multicols}
+
+% --- Page Break ---
+\newpage
+
+\section*{Take Action}
+\begin{tcolorbox}[mybox]
+\begin{multicols}{2}
+
+\begin{center}
+\textbf{Share this pamphlet!}\\[.5em]
+\qrcode[height=1in]{https://drive.google.com/file/d/1HcILTMKsxX-UhfQB28K_-5u7imO5OGmx/view}
+\end{center}
+
+\columnbreak
+
+\begin{center}
+\textbf{Call Your Utah Representatives}\\[.5em]
+\qrcode[height=1in]{https://le.utah.gov/GIS/findDistrict.jsp}
+\end{center}
+
+
+
+\end{multicols}
+\end{tcolorbox}
+
+% --- Support Section ---
+\vspace{.5em}
+\section*{Support Individuals and Communities}
+\begin{tcolorbox}[mybox]
+{\small
+\textit{Support looks different for everyone. These actions are well informed suggestions, however you are not expected to do everything. Offer what you feel safe, able, and comfortable providing. Even small efforts can matter.}
+}
+\vspace{1em}
+\begin{itemize}[leftmargin=1em]
+  \item \textbf{Just listen.} Let survivors share their story without judgment or pressure.
+  \item \textbf{Validate and Reassure.} Say things like “I believe you” and “You’re not alone.”
+  \item \textbf{Offer what you can.} Rides, meals, childcare, or just being there for them.
+  \item \textbf{Avoid blaming the victim.} Focus on the abuse, not the victim’s choices.
+  \item \textbf{Model healthy relationships.} In friendships, families, and workplaces.
+  \item \textbf{Speak up.} Challenge sexist, hateful, or violent language when you can.
+  \item \textbf{Share resources.} Help others find and access resources.
+\end{itemize}
+\end{tcolorbox}
+
+% --- Donate / Volunteer ---
+\vspace{1em}
+\section*{Donate or Volunteer}
+\begin{tcolorbox}[mybox]
+\begin{multicols}{2}
+
+\subsection*{Donate}
+\begin{center}
+\textbf{YCC Donate}\\[.5em]
+\qrcode[height=1in]{https://www.yccogden.org/getinvolved/donate/}
+
+\vspace{1em}
+\textbf{Safe Harbor Donate}\\[.5em]
+\qrcode[height=1in]{https://safeharbor.app.neoncrm.com/np/clients/safeharbor/donation.jsp?test=true&campaign=2&}
+\end{center}
+
+\columnbreak
+
+\subsection*{Volunteer}
+\begin{center}
+\textbf{YCC Volunteer}\\[.5em]
+\qrcode[height=1in]{https://www.yccogden.org/getinvolved/volunteer/}
+
+\vspace{1em}
+\textbf{Safe Harbor Volunteer}\\[.5em]
+\qrcode[height=1in]{https://safeharborhope.org/offer-hope/volunteer/}
+\end{center}
+
+\end{multicols}
+\end{tcolorbox}
+
+\end{document}
